@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent-color: #3b82f6;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-white antialiased;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+  
+  ::selection {
+    @apply bg-primary/30 text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary hover:bg-primary-hover text-white font-medium rounded-lg transition-all duration-200;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 4px 12px rgba(59, 130, 246, 0.3);
+  }
+  
+  .btn-primary:hover {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.5), 0 6px 16px rgba(59, 130, 246, 0.4);
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 border border-card-border hover:border-primary/50 text-white font-medium rounded-lg transition-all duration-200;
+  }
+  
+  .card {
+    @apply bg-background-lighter border border-card-border rounded-xl;
+  }
+  
+  .section-heading {
+    @apply text-3xl md:text-4xl font-semibold text-white tracking-tight;
+  }
+  
+  .section-subheading {
+    @apply text-base text-muted max-w-xl leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-primary-light;
+  }
+  
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+}
+
+/* Code block styling */
+.shiki {
+  @apply bg-transparent !important;
+}
+
+.shiki code {
+  @apply font-mono text-sm;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-card-border rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted/30;
+}
