@@ -1,0 +1,12 @@
+SKILL.md
+/node_modules
+/dist
+/build
+/public
+/src
+/test
+/docs
+/examples
+/templates
+/templates
+/.svelte-kit
