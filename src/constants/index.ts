@@ -1,7 +1,7 @@
 export const siteConfig = {
     name: "Minibase",
-    url: "https://minibase.dev",
-    ogImage: "https://minibase.dev/main-og-image.png",
+    url: "https://minibase.co",
+    ogImage: "https://minibase.co/main-og-image.png",
     title: "Minibase | Ship ten products. Pay for one backend.",
     description: "Postgres databases, REST APIs, auth, and file storage for all your projects. One subscription. No database pausing.",
     keywords: "backend, database, postgres, api, authentication, file storage, indie hacker, saas, supabase alternative, baas",
