@@ -58,7 +58,7 @@
           class:animate-fade-in-up={visible}
           style="animation-delay: {(i + 1) * 100}ms"
         >
-          <div class="text-4xl font-semibold text-primary/20 mb-4">{step.number}</div>
+          <div class="text-4xl font-semibold text-primary/60 mb-4">{step.number}</div>
           <h3 class="text-lg font-medium text-white mb-2">{step.title}</h3>
           <p class="text-muted text-sm leading-relaxed">{step.description}</p>
         </div>

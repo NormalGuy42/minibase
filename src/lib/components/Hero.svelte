@@ -42,8 +42,8 @@ const { url } = await mb.storage
         class:opacity-0={!visible}
         class:animate-fade-in-up={visible}
       >
-        Ship ten products.<br />
-        <span class="text-primary">Pay for one backend.</span>
+        <span class="text-primary">Ship every idea.</span>
+        <span class="">Not just the ones you can afford.</span>
       </h1>
       
       <p 
